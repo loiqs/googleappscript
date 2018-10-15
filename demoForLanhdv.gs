@@ -37,10 +37,7 @@ function capnhatNgaytuanmoi() {
 
 function dupName(sheetNguon,sheetDich) {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
-  //var sheet = ss.getActiveSheet();
   var sheet = ss.getSheetByName(sheetNguon);
-  //var name = Browser.inputBox('Enter new sheet name');
-  //sheetDich = "-->>" + sheetDich;
   ss.insertSheet(sheetDich, {template: sheet});
 }
 
